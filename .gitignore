@@ -10,5 +10,5 @@ venv/
 **/models/
 
 /jax-main/
-/text-to-video-ms/outputs/
-/text-to-video-ms/inputs/
+/text-to-video-ms/outputs/*
+/text-to-video-ms/inputs/*
