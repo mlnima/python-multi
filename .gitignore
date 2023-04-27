@@ -1,0 +1,10 @@
+# Ignore venv folder
+venv/
+
+# Ignore models folder in root directory
+/models/
+
+/jax-main/
+
+# Ignore models folder in all subdirectories
+**/models/
