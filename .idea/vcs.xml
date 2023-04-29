@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/libs/transformers" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/models/llm/OpenAssistant/oasst-sft-6-llama-30b-xor-raw" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/models/llm/OpenAssistant/oasst-sft-6-llama-30b-xor-raw/oasst-sft-6-llama-30b-xor" vcs="Git" />
   </component>
 </project>

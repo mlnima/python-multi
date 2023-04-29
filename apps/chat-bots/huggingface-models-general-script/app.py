@@ -1,5 +1,8 @@
 import os
 from transformers import AutoTokenizer, AutoModelForCausalLM
+models_path = os.path.join(os.path.abspath(os.getcwd()), '../../../models')
+model_name = 'OpenAssistant/stablelm-7b-sft-v7-epoch-3'
+app_dir = os.path.join(models_path, model_name.replace("/", "-"))
 
 
 def model_exists(path):
@@ -20,14 +23,8 @@ def ensure_model(model_name, app_dir):
     return tokenizer, model
 
 
-model_name = "OpenAssistant/stablelm-7b-sft-v7-epoch-3"
-custom_path = 'M:/dev/python-multi/models/llm'
-app_dir = os.path.join(custom_path, model_name.replace("/", "-"))
-
-# Ensure model is downloaded and loaded
 tokenizer, model = ensure_model(model_name, app_dir)
 
-# Start an interactive loop for asking and answering questions
 while True:
     question = input("Please enter your question (type 'exit' to quit): ")
 

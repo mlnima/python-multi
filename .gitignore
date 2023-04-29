@@ -1,14 +1,8 @@
 # Ignore venv folder
 venv/
-
 # Ignore models folder in root directory
-/models/
-
-
-
-# Ignore models folder in all subdirectories
-**/models/
-
+/models/*
+/ignored-app/*
+/outputs/*
+/inputs/*
 /jax-main/
-/text-to-video-ms/outputs/*
-/text-to-video-ms/inputs/*

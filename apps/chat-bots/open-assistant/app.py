@@ -9,14 +9,14 @@ def model_exists(path):
     return all(os.path.isfile(os.path.join(path, file)) for file in files)
 
 
-app_dir = 'M:/dev/python-multi/models/llm/stableLM'
-
+#app_dir = 'M:/dev/python-multi/models/llm/open-assistant'
+app_dir = '/models/llm/OpenAssistant/oasst-sft-6-llama-30b-xor'
 
 # Check for an exiting version of the model and download it if is missing
 if not model_exists(app_dir):
     # Download the tokenizer and model
-    tokenizer = AutoTokenizer.from_pretrained("stabilityai/stablelm-tuned-alpha-7b")
-    model = AutoModelForCausalLM.from_pretrained("stabilityai/stablelm-tuned-alpha-7b")
+    tokenizer = AutoTokenizer.from_pretrained("OpenAssistant/oasst-sft-6-llama-30b-xor")
+    model = AutoModelForCausalLM.from_pretrained("OpenAssistant/oasst-sft-6-llama-30b-xor")
     # Save the tokenizer and model to your app directory
     tokenizer.save_pretrained(app_dir)
     model.save_pretrained(app_dir)
